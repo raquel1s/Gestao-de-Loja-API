@@ -32,11 +32,9 @@ public class CategoriaService {
     }
 
     public CategoriaRespostaDTO buscarPorId(Long id){
-        Categoria categoria = repository.findById(id).orElseThrow(() -> {
+        return mapper.paraRespostaDTO(repository.findById(id).orElseThrow(() -> {
             throw new CategoriaNaoExisteException();
-        });
-
-        return mapper.paraRespostaDTO(categoria);
+        }));
     }
 
     public CategoriaRespostaDTO atualizar(Long id,CategoriaRequisicaoDTO requisicaoDTO){
