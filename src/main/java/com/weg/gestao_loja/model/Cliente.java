@@ -17,6 +17,8 @@ public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(nullable = false)
+    private String nome;
     @Column(nullable = false, unique = true)
     private String email;
     @Column(nullable = false)
@@ -24,7 +26,8 @@ public class Cliente {
     @Column(nullable = false, unique = true, length = 14)
     private String cpf;
 
-    public Cliente(String email, String telefone, String cpf) {
+    public Cliente(String nome, String email, String telefone, String cpf) {
+        this.nome = nome;
         this.email = email;
         this.telefone = telefone;
         this.cpf = cpf;
