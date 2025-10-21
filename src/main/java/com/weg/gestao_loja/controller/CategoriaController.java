@@ -4,6 +4,7 @@ import com.weg.gestao_loja.dto.categoria.CategoriaRequisicaoDTO;
 import com.weg.gestao_loja.dto.categoria.CategoriaRespostaDTO;
 import com.weg.gestao_loja.service.CategoriaService;
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
