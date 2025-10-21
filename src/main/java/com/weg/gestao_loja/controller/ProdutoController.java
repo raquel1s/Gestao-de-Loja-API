@@ -38,4 +38,10 @@ public class ProdutoController {
                                                         @RequestBody ProdutoRequisicaoDTO requisicaoDTO){
         return ResponseEntity.status(HttpStatus.OK).body(service.atualizar(id, requisicaoDTO));
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> excluir(@PathVariable Long id){
+        service.excluir(id);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
 }

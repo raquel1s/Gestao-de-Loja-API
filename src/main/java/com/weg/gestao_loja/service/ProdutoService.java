@@ -10,7 +10,6 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @AllArgsConstructor
@@ -38,12 +37,16 @@ public class ProdutoService {
             throw new ProdutoNaoExisteException();
         });
 
-        if(produto == null){
+        Produto newProduto = mapper.paraUpdate(requisicaoDTO, produto);
+        repository.save(newProduto);
+        return mapper.paraRespostaDTO(newProduto);
+    }
+
+    public void excluir(Long id) {
+        if(!repository.existsById(id)){
             throw new ProdutoNaoExisteException();
         }
 
-        mapper.paraUpdate(requisicaoDTO, produto);
-        produto.setId(id);
-        return mapper.paraRespostaDTO(produto);
+        repository.deleteById(id);
     }
 }
