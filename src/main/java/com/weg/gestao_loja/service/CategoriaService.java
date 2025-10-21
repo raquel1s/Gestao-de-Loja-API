@@ -2,8 +2,8 @@ package com.weg.gestao_loja.service;
 
 import com.weg.gestao_loja.dto.categoria.CategoriaRequisicaoDTO;
 import com.weg.gestao_loja.dto.categoria.CategoriaRespostaDTO;
-import com.weg.gestao_loja.exception.CategoriaCadastradaException;
-import com.weg.gestao_loja.exception.CategoriaNaoExisteException;
+import com.weg.gestao_loja.exception.categoria.CategoriaCadastradaException;
+import com.weg.gestao_loja.exception.categoria.CategoriaNaoExisteException;
 import com.weg.gestao_loja.mapper.CategoriaMapper;
 import com.weg.gestao_loja.model.Categoria;
 import com.weg.gestao_loja.repository.CategoriaRepository;

@@ -1,4 +1,4 @@
-package com.weg.gestao_loja.exception;
+package com.weg.gestao_loja.exception.categoria;
 
 public class CategoriaNaoExisteException extends RuntimeException{
 

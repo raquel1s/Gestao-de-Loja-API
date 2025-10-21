@@ -2,7 +2,7 @@ package com.weg.gestao_loja.service;
 
 import com.weg.gestao_loja.dto.produto.ProdutoRequisicaoDTO;
 import com.weg.gestao_loja.dto.produto.ProdutoRespostaDTO;
-import com.weg.gestao_loja.exception.ProdutoNaoExisteException;
+import com.weg.gestao_loja.exception.produto.ProdutoNaoExisteException;
 import com.weg.gestao_loja.mapper.ProdutoMapper;
 import com.weg.gestao_loja.model.Produto;
 import com.weg.gestao_loja.repository.ProdutoRepository;

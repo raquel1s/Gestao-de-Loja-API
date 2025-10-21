@@ -2,8 +2,8 @@ package com.weg.gestao_loja.service;
 
 import com.weg.gestao_loja.dto.cliente.ClienteRequisicaoDTO;
 import com.weg.gestao_loja.dto.cliente.ClienteRespostaDTO;
-import com.weg.gestao_loja.exception.ClienteCadastradoException;
-import com.weg.gestao_loja.exception.ClienteNaoExisteException;
+import com.weg.gestao_loja.exception.cliente.ClienteCadastradoException;
+import com.weg.gestao_loja.exception.cliente.ClienteNaoExisteException;
 import com.weg.gestao_loja.mapper.ClienteMapper;
 import com.weg.gestao_loja.model.Cliente;
 import com.weg.gestao_loja.repository.ClienteRepository;

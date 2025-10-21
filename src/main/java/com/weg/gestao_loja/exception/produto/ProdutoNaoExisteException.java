@@ -1,4 +1,4 @@
-package com.weg.gestao_loja.exception;
+package com.weg.gestao_loja.exception.produto;
 
 public class ProdutoNaoExisteException extends RuntimeException{
 
